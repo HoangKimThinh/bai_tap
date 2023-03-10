@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        header{
+            height: 32px;
+            width: 100%;
+            background-color:#2f3036 ;
+            position: relative;
+        }
+        .menu1{
+            display: flex;
+            
+        }
+        .box-menu2:hover .menu2 {
+            display: block;
+        }
+        .menu2{
+            display: none;
+            right: 56%;
+            position: absolute;
+            top:33px;
+            background-color: #f3f3f3;
+        }
+        .menu2 > li{
+            display: block;
+        }
+        .menu2 > li:hover{
+            background-color: #19c589;
+        }
+        a{
+            text-decoration: none;
+        }
+        .menu1 >li{
+            border-right: 1px solid #fff;
+        }
+        .menu1 >li >a{
+            color: #fff;
+        }
+        li:hover{
+            background-color: #90ee90;
+            cursor: pointer;
+        }
+        li{
+            display: inline-block;
+            padding-right: 60px;
+            padding-left: 4px;
+            line-height: 32px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <ul class="menu1">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Introdution</a></li>
+            <li class="box-menu2"><a href="#" >Portfolio</a>
+                <ul class="menu2">
+                    <li><a href="#">Photography</a></li>
+                    <li><a href="#">Web & Usẻ interface design</a></li>
+                    <li><a href="#">lllustrantion</a></li>
+                </ul>
+            </li>
+            <li><a href="#">News</a></li>
+            <li style="border: none;"><a href="#">Contact</a></li>
+        </ul>
+    </header>
+</body>
+</html>
